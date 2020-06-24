@@ -1,0 +1,68 @@
+.parent {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.align-right {
+  right: 0;
+  position: absolute;
+}
+
+.firstNameParent {
+  position: relative;
+  padding-left: 5px;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.firstNameChild {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 50px;
+  -moz-transform: scaleX(-1);                /* Gecko */
+  -o-transform: scaleX(-1);                 /* Opera */
+  -webkit-transform: scaleX(-1);           /* Webkit */
+  transform: scaleX(-1) translateY(-50%);                  /* Standard */
+  filter: FlipH;
+}
+
+.lastNameParent {
+  position: relative;
+  height: 100%;
+  background-color: white;
+  color: black;
+}
+
+.lastNameChild {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  /*text-shadow: 1px 1px 1px grey;*/
+}
+
+.scroll-bar-left {
+  align: right;
+}
+
+.scroll-bar {
+  cursor: col-resize;
+  background-color: yellow;
+}
+
+@media (max-width: 480px) {
+  .firstNameChild {
+    font-size: 30px;
+  }
+  .lastNameChild {
+    font-size: 30px;
+  }
+ }

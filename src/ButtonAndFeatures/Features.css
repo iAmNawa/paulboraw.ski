@@ -1,0 +1,14 @@
+.example-appear {
+  opacity: .1;
+  height: 65px;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  height: 50px;
+  transition: opacity .5s ease-in, height .5s ease-in;
+}
+
+span {
+  color: white;
+}
